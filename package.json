@@ -1,6 +1,6 @@
 {
   "name": "gulp-dot-template",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Render doT templates",
   "license": "MIT",
   "repository": "titarenko/gulp-dot-template",

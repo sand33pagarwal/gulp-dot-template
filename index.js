@@ -4,7 +4,8 @@ var dot = require('dot');
 
 module.exports = render;
 
-function render (data) {
+function render (data, options) {
+	options = options || { strip: false };
 	return through.obj(function (file, enc, cb) {
 		if (file.isNull()) {
 			cb(null, file);
@@ -17,7 +18,7 @@ function render (data) {
 		}
 
 		try {
-			var renderer = dot.template(file.contents.toString());
+			var renderer = dot.template(file.contents.toString(), options);
 			var rendered = renderer(data);
 			file.contents = new Buffer(rendered);
 			this.push(file);
