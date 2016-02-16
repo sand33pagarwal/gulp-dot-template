@@ -1,0 +1,36 @@
+{
+  "name": "gulp-dot-template",
+  "version": "0.1.0",
+  "description": "Render doT templates",
+  "license": "MIT",
+  "repository": "titarenko/gulp-dot-template",
+  "author": {
+    "name": "Constantin Titarenko",
+    "email": "constantin.titarenko@gmail.com",
+    "url": "titarenko.info"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha tests"
+  },
+  "main": "index.js",
+  "keywords": [
+    "gulpplugin",
+    "dot",
+    "template",
+    "templating",
+    "render",
+    "rendering"
+  ],
+  "dependencies": {
+    "dot": "^1.0.3",
+    "gulp-util": "^3.0.0",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.2.2"
+  }
+}
